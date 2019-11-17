@@ -208,7 +208,6 @@ function OpenWeaponComponentShopMenu(components, weaponName, parentShop,zone)
 				if bought then
 					if data.current.price > 0 then
 						ESX.ShowNotification(_U('gunshop_bought',_U('ammo'),ESX.Math.GroupDigits(data.current.price)))
-						--AddAmmoToPed(PlayerPedId(), weaponName, data.current.ammoNumber)
 					end
 					parentShop.close()
 				else
@@ -239,7 +238,7 @@ function OpenAmmoShopMenu(buyAmmo,weaponName, parentShop,zone)
 			if bought then
 				if data.current.price > 0 then
 					ESX.ShowNotification(_U('gunshop_bought',_U('ammo'),ESX.Math.GroupDigits(data.current.price)))
-					--AddAmmoToPed(PlayerPedId(), weaponName, data.current.ammoToBuy)
+
 				end
 				parentShop.close()
 			else
